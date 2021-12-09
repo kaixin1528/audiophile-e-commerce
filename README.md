@@ -80,11 +80,13 @@ const proudOfThisFunc = () => {
 
 For further development, I would focus on polishing the responsive designs, especially for tablet, as
 this project is my first time attempting to optimize the layout for different screen sizes.
+
 Another thing I would like to work on is improving the animation on some of the components, 
 for instance making the drop down menu slide down gradually or incorporate a locomotive scroll in which 
-the images ease in slowly by the time I scroll down to their sections. Lastly, this project is great 
-for backend development, so I believe I will come back to this project to work on the backend side 
-when I feel comfortable in those knowledge.
+the images ease in slowly by the time I scroll down to their sections. 
+
+Lastly, this project is great for backend development, so I believe I will come back to this project to
+work on the backend side when I feel comfortable in applying those required tech.
 
 
 ### Useful resources
@@ -92,11 +94,8 @@ when I feel comfortable in those knowledge.
 - [Tailwind Documentation](https://tailwindcss.com/docs) - This helped me
   immensely as the documentation had easy and clear styling and animation
   examples, and I will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article
-  which helped me finally understand XYZ. I'd recommend it to anyone still
-  learning this concept.
+  
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
+- Website - [Kaixin Huang](https://www.your-site.com)
