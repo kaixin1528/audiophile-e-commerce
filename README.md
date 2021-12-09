@@ -1,4 +1,4 @@
-# Audiophile e-commerce website
+# Audiophile E-commerce Website
 
 ## Table of contents
 
@@ -78,12 +78,14 @@ const proudOfThisFunc = () => {
 
 ### Continued development
 
-Use this section to outline areas that you want to continue focusing on in
-future projects. These could be concepts you're still not completely comfortable
-with or techniques you found useful that you want to refine and perfect.
+For further development, I would focus on polishing the responsive designs, especially for tablet, as
+this project is my first time attempting to optimize the layout for different screen sizes.
+Another thing I would like to work on is improving the animation on some of the components, 
+for instance making the drop down menu slide down gradually or incorporate a locomotive scroll in which 
+the images ease in slowly by the time I scroll down to their sections. Lastly, this project is great 
+for backend development, so I believe I will come back to this project to work on the backend side 
+when I feel comfortable in those knowledge.
 
-For further development, I would focus on polishing the responsive design as
-this is the first time getting exposed to adapt to different screen sizes.
 
 ### Useful resources
 
