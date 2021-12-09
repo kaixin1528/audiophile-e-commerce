@@ -28,7 +28,7 @@ You should be able to:
 
 ### Screenshot
 
-![](./src/desktop-homepage.png)
+![Desktop Homepage](/src/desktop-homepage.png)
 
 ### Links
 
