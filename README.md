@@ -119,10 +119,20 @@ the content I wanted to display to the user.
 This is the first time I had to actively apply several React routings to switch between many different pages.
 
 Conditional renderings is another common theme throughout the process in which I had to make some components 
-visible and hidden with a click.
+visible and hidden with a click：
 
 ```js
 {dropMenu && <Menu onDropMenu={onDropMenu} />}
+```
+
+I also started using transition and transform properties to create a simple scaling animation that eases out 
+when I hover over the component:
+```css
+@layer components {
+  .btn-product {
+    @apply grid group justify-items-center px-32 py-7 transition duration-500 ease-out transform hover:scale-105 t:px-0 bg-light-gray rounded-lg;
+  }
+}
 ```
 
 ### Continued development
