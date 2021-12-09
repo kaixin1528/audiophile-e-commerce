@@ -64,9 +64,6 @@ want to highlight is a great way to reinforce your own knowledge.
 
 To see how you can add code snippets, see below:
 
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
 
 ```css
 .proud-of-this-css {
@@ -74,15 +71,20 @@ To see how you can add code snippets, see below:
 }
 ```
 
+As this is my first time doing responsive designs, the responsive background images proved to be a challenging 
+task for me. Since I'm using Tailwind, it requires you to include all the many image URLs in their custom configuration file. 
+Also, React doesn't allow direct image URLs linked to the src attribute, so I had to import locally everytime an 
+image when needed, which was quite time-consuming.
 
-This is the first time I had to actively apply several React routings to switch between many different pages. 
-
-Conditional renderings is another common theme throughout the process in which I had 
-
+```html
+<div
+        className={`d:grid bg-light-gray rounded-lg bg-no-repeat bg-center bg-cover bg-m-${product.slug} t:bg-t-${product.slug} d:bg-d-${product.slug} h-96 t:h-screen w-full`}
+      ></div>
+```
 
 Deciding which component the states should stay in and writing their respective handlers 
 also proved to be quite an interesting task. As I moved on to working on new pages, I discovered that 
-some states are more convenient to retrieve in lower levels as supposed to storing all of them in App.js. 
+some states were more convenient to retrieve in lower levels as supposed to storing all of them in App.js. 
 
 Handlers are a great way to add interactivity to the website, but they can get confusing really quickly without 
 some pre-planned logic. For example, the handler below attempts to add a new product with x quantity to the cart, 
@@ -110,6 +112,10 @@ const handleAddtoCart = (id, product, quantity) => {
     }
   };
 ```
+
+This is the first time I had to actively apply several React routings to switch between many different pages. 
+
+Conditional renderings is another common theme throughout the process in which I had 
 
 
 ### Continued development
