@@ -28,7 +28,7 @@ You should be able to:
 
 ### Screenshot
 
-![Desktop Homepage](screenshots/desktop-homepage.png)
+![Desktop Homepage](screenshot/desktop-homepage.png)
 
 ### Links
 
