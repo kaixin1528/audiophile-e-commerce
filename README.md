@@ -26,6 +26,7 @@ You should be able to:
   - Shipping always adds $50 to the order
 - See an order confirmation modal after checking out with an order summary
 
+
 ### Screenshot
 
 ![Desktop Homepage](screenshot/desktop-homepage.png)
@@ -36,11 +37,13 @@ You should be able to:
 
 For more photos, please see the screenshot folder.
 
+
 ### Links
 
 - Live Site URL: [Add live site URL here](https://your-live-site-url.com)
 
 ## My process
+
 
 ### Built with
 
@@ -51,6 +54,7 @@ For more photos, please see the screenshot folder.
 - Mobile-first workflow
 - [React](https://reactjs.org/) - JS library
 - [Tailwind](https://tailwindcss.com/) - For styles
+
 
 ### What I learned
 
@@ -70,11 +74,43 @@ To see how you can add code snippets, see below:
 }
 ```
 
+
+This is the first time I had to actively apply several React routings to switch between many different pages. 
+
+Conditional renderings is another common theme throughout the process in which I had 
+
+
+Deciding which component the states should stay in and writing their respective handlers 
+also proved to be quite an interesting task. As I moved on to working on new pages, I discovered that 
+some states are more convenient to retrieve in lower levels as supposed to storing all of them in App.js. 
+
+Handlers are a great way to add interactivity to the website, but they can get confusing really quickly without 
+some pre-planned logic. For example, the handler below attempts to add a new product with x quantity to the cart, 
+and if it's already added, it will only update the product's quantity in the cart as supposed to adding a duplicated
+product:
 ```js
-const proudOfThisFunc = () => {
-  console.log("🎉");
-};
+const handleAddtoCart = (id, product, quantity) => {
+    const selectedProduct = cart.filter((item) => item.id === id);
+    if (selectedProduct.length) {
+      setCart(
+        cart.map((item) =>
+          item.id === id ? { ...item, amount: item.amount + quantity } : item
+        )
+      );
+    } else {
+      setCart([
+        ...cart,
+        {
+          id: id,
+          name: product.name.substring(0, product.name.lastIndexOf(" ")),
+          price: product.price,
+          amount: quantity,
+        },
+      ]);
+    }
+  };
 ```
+
 
 ### Continued development
 
