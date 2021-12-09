@@ -121,7 +121,7 @@ This is the first time I had to actively apply several React routings to switch 
 Conditional renderings is another common theme throughout the process in which I had to make some components 
 visible and hidden with a click.
 
-```html
+```js
 {dropMenu && <Menu onDropMenu={onDropMenu} />}
 ```
 
