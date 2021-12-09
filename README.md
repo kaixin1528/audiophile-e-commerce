@@ -29,6 +29,7 @@ You should be able to:
 ### Screenshot
 
 ![Desktop Homepage](screenshot/desktop-homepage.png)
+![Desktop Products](screenshot/desktop-category.png)
 
 ### Links
 
