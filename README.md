@@ -60,8 +60,8 @@ For more photos, please see the screenshot folder.
 
 As this is my first time doing responsive designs, the responsive background images proved to be a challenging 
 task for me. Since I'm using Tailwind, it requires you to include all the many image URLs in their custom configuration file. 
-Also, React doesn't allow direct image URLs linked to the src attribute, so I had to import locally everytime an 
-image when needed, which was quite time-consuming.
+Also, React doesn't allow direct image URLs linked to the src attribute, so I had to import locally an 
+image every time when needed, which was quite time-consuming.
 
 Learning how to make these background images appear in their original size with empty content, making sure they are centered, 
 and are adaptive to different screen sizes were what took me the majority of the time initially for this project.
