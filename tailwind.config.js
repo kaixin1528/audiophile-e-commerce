@@ -27,12 +27,12 @@ module.exports = {
       "moderate-orange": "#D87D4A",
       "light-gray": "#F1F1F1",
     }),
-    screens: {
-      m: "375px",
-      t: "768px",
-      d: "1440px",
-    },
     extend: {
+      screens: {
+        m: "375px",
+        t: "768px",
+        d: "1024px",
+      },
       backgroundImage: {
         // homepage
         circles: "url('./assets/home/desktop/pattern-circles.svg')",
