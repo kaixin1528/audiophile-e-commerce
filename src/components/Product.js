@@ -18,9 +18,9 @@ const Product = ({ productNum, productName }) => {
       <motion.button>
         <img
           src={products[productNum]["src"]}
-          alt='headphone'
+          alt='product'
           className={`-mt-20 mx-auto justify-self-center ${
-            productNum === 0 ? "transform -rotate-6" : ""
+            productNum === 0 ? "transform -rotate-6" : "transform -rotate-1"
           }`}
         />
         <section className='h-10'>

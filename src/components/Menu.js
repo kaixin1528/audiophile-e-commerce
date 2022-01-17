@@ -47,7 +47,7 @@ const Menu = ({ onDropMenu }) => {
                   src={products[i]["src"]}
                   alt='category'
                   className={`-mt-20 mx-auto justify-self-center ${
-                    i === 0 ? "transform -rotate-6" : ""
+                    i === 0 ? "transform -rotate-6" : "transform -rotate-1"
                   }`}
                   onClick={onDropMenu}
                 />
