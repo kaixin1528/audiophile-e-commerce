@@ -31,7 +31,8 @@ module.exports = {
       screens: {
         m: "375px",
         t: "768px",
-        d: "1024px",
+        d: "1100px",
+        xl: "1440px",
       },
       backgroundImage: {
         // homepage

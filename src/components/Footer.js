@@ -14,23 +14,18 @@ const Footer = () => {
           className='col-start-2 t:col-start-1 justify-self-center t:justify-self-start t:ml-4 d:ml-0 pt-10 border-t-8 border-moderate-orange'
         />
       </section>
-      <nav className='grid text-white text-center gap-5 t:grid-flow-col t:auto-cols-max t:w-4/5 t:justify-items-start t:pl-4 t:gap-10 d:pl-48 d:pt-12'>
-        <Link to='/'>
-          <button className='font-medium tracking-widest hover:text-moderate-orange'>
-            HOME
-          </button>
-        </Link>
-        <Link to='/headphones'>
+      <nav className='grid text-white text-center gap-5 t:grid-flow-col t:auto-cols-max t:justify-items-start t:pl-4 t:gap-10 d:grid-cols-3 d:justify-self-end d:pt-12'>
+        <Link to='/headphones' className='justify-self-end'>
           <button className='font-medium tracking-widest hover:text-moderate-orange'>
             HEADPHONES
           </button>
         </Link>
-        <Link to='/speakers'>
+        <Link to='/speakers' className='justify-self-end'>
           <button className='font-medium tracking-widest hover:text-moderate-orange'>
             SPEAKERS
           </button>
         </Link>
-        <Link to='/earphones'>
+        <Link to='/earphones' className='justify-self-end'>
           <button className='font-medium tracking-widest hover:text-moderate-orange'>
             EARPHONES
           </button>
