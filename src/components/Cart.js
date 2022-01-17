@@ -23,7 +23,7 @@ const Cart = ({
             Remove all
           </button>
         </header>
-        <ul className='grid gap-6 text-sm'>
+        <ul className='grid gap-6 text-sm h-60 overflow-y-scroll'>
           {cart.map((product) => {
             return (
               <li className='grid grid-cols-3 items-center'>
