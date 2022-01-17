@@ -6,7 +6,7 @@ const Input = ({ input, placeholder }) => {
         type='text'
         name={input}
         placeholder={placeholder}
-        className='p-5 font-medium text-sm ring-1 ring-gray-300 focus:ring-1 focus:ring-moderate-orange rounded-lg focus:outline-none'
+        className='p-5 font-medium text-sm ring-1 ring-gray-300 focus:ring-1 focus:ring-moderate-orange rounded-lg'
       />
     </main>
   );
