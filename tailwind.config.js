@@ -1,5 +1,5 @@
 module.exports = {
-  purge: ["./src/**/*.{js,jsx,ts,tsx}", "./public/index.html"],
+  purge: "./src/**/*.{js,ts,jsx,tsx}",
   darkMode: false, // or 'media' or 'class'
   theme: {
     fontFamily: {
@@ -31,8 +31,7 @@ module.exports = {
       screens: {
         m: "375px",
         t: "768px",
-        d: "1100px",
-        xl: "1440px",
+        d: "1024px",
       },
       backgroundImage: {
         // homepage
