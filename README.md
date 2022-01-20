@@ -4,6 +4,7 @@
 
 - [Overview](#overview)
   - [Getting Started](#getting-started)
+  - [Project Summary](#project-summary)
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
@@ -34,22 +35,17 @@ yarn start
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You should be able to:
+### Project Summary
 
-- View the optimal layout for the website depending on your device's screen size
-- See hover states for all interactive elements on the page
-- Add/Remove products from the cart
-- Edit product quantities in the cart
-- Fill in all fields in the checkout
-- Receive form validations if fields are missed or incorrect during checkout
-- See correct checkout totals depending on the products in the cart
-  - Shipping always adds $50 to the order
-- See an order confirmation modal after checking out with an order summary
+Audiophile is an e-commerce responsive website that sells audio products. On this website, 
+one can add/remove products from the cart, edit product quantities in the cart, see correct 
+checkout totals depending on the products in the cart, and see an order confirmation modal 
+after checking out with an order summary.
 
 
 ### Links
 
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [https://kaixin-audiophile.netlify.app](https://kaixin-audiophile.netlify.app)
 
 ## My process
 
@@ -61,8 +57,8 @@ You should be able to:
 - CSS Grid
 - Javascript
 - Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
-- [Tailwind](https://tailwindcss.com/) - For styles
+- [React](https://reactjs.org/) 
+- [Tailwind](https://tailwindcss.com/) 
 
 
 ### What I learned
