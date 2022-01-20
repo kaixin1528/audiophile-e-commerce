@@ -31,10 +31,6 @@ You should be able to:
 
 ![Desktop Homepage](screenshot/desktop-homepage.png)
 
-![Desktop Products](screenshot/desktop-category.png)
-
-![Desktop Specified Product](screenshot/desktop-specific-product.png)
-
 For more photos, please see the screenshot folder.
 
 
