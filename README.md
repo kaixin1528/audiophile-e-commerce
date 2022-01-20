@@ -1,70 +1,160 @@
-# Getting Started with Create React App
+# Audiophile E-commerce Website
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Table of contents
 
-## Available Scripts
+- [Overview](#overview)
+  - [Screenshot](#screenshot)
+  - [Links](#links)
+- [My process](#my-process)
+  - [Built with](#built-with)
+  - [What I learned](#what-i-learned)
+  - [Continued development](#continued-development)
+  - [Useful resources](#useful-resources)
+- [Author](#author)
 
-In the project directory, you can run:
+## Overview
 
-### `npm start`
+You should be able to:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- View the optimal layout for the website depending on your device's screen size
+- See hover states for all interactive elements on the page
+- Add/Remove products from the cart
+- Edit product quantities in the cart
+- Fill in all fields in the checkout
+- Receive form validations if fields are missed or incorrect during checkout
+- See correct checkout totals depending on the products in the cart
+  - Shipping always adds $50 to the order
+- See an order confirmation modal after checking out with an order summary
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
 
-### `npm test`
+### Screenshot
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+![Desktop Homepage](screenshot/desktop-homepage.png)
 
-### `npm run build`
+![Desktop Products](screenshot/desktop-category.png)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+![Desktop Specified Product](screenshot/desktop-specific-product.png)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+For more photos, please see the screenshot folder.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+### Links
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## My process
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+### Built with
 
-## Learn More
+- Semantic HTML5 markup
+- CSS custom properties
+- CSS Grid
+- Javascript
+- Mobile-first workflow
+- [React](https://reactjs.org/) - JS library
+- [Tailwind](https://tailwindcss.com/) - For styles
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### What I learned
 
-### Code Splitting
+As this is my first time doing responsive designs, the responsive background images proved to be a challenging 
+task for me. Since I'm using Tailwind, it requires you to include all the many image URLs in their custom configuration file. 
+Also, React doesn't allow direct image URLs linked to the src attribute, so I had to import locally an 
+image every time when needed, which was quite time-consuming.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Learning how to make these background images appear in their original size with empty content, making sure they are centered, 
+and are adaptive to different screen sizes were what took me the majority of the time initially for this project.
 
-### Analyzing the Bundle Size
+```html
+<div
+   className={`d:grid bg-light-gray rounded-lg bg-no-repeat bg-center bg-cover bg-m-${product.slug} t:bg-t-${product.slug} d:bg-d-${product.slug} h-96 t:h-screen w-full`}
+></div>
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Deciding which component the states should stay in and writing their respective handlers 
+also proved to be quite an interesting task. As I moved on to working on new pages, I discovered that 
+some states were more convenient to retrieve in lower levels as supposed to storing all of them in App.js. 
 
-### Making a Progressive Web App
+Handlers are a great way to add interactivity to the website, but they can get confusing really quickly without 
+some pre-planned logic. For example, the handler below attempts to add a new product with x quantity to the cart, 
+and if it's already added, it will only update the product's quantity in the cart as supposed to adding a duplicated
+product:
+```js
+const handleAddtoCart = (id, product, quantity) => {
+    const selectedProduct = cart.filter((item) => item.id === id);
+    if (selectedProduct.length) {
+      setCart(
+        cart.map((item) =>
+          item.id === id ? { ...item, amount: item.amount + quantity } : item
+        )
+      );
+    } else {
+      setCart([
+        ...cart,
+        {
+          id: id,
+          name: product.name.substring(0, product.name.lastIndexOf(" ")),
+          price: product.price,
+          amount: quantity,
+        },
+      ]);
+    }
+  };
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Learning how to make a modal and turn it into a reusable component was another takeaway I had with this project.
+For example, in the code snippet below, the outer container makes sure that the modal occupies the entire page 
+with a background color set to moderate gray. The inner container with a background color of white contains all
+the content I wanted to display to the user. 
 
-### Advanced Configuration
+```html
+<div className='absolute inset-0 py-40 px-6 bg-gray-900 bg-opacity-50'>
+  <div className='grid p-10 gap-8 t:w-3/5 t:mx-auto d:w-2/5 d:mx-auto bg-white rounded-lg'>
+     ...
+  </div>
+</div>
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+This is the first time I had to actively apply several React routings to switch between many different pages.
 
-### Deployment
+Conditional renderings is another common theme throughout the process in which I had to make some components 
+visible and hidden with a click：
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+```js
+{dropMenu && <Menu onDropMenu={onDropMenu} />}
+```
 
-### `npm run build` fails to minify
+I also started using transition and transform properties to create a simple scaling animation that eases out 
+when I hover over the component:
+```css
+@layer components {
+  .btn-product {
+    @apply grid group justify-items-center px-32 py-7 transition duration-500 ease-out transform hover:scale-105 t:px-0 bg-light-gray rounded-lg;
+  }
+}
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### Continued development
+
+For further development, I would focus on polishing the responsive designs, especially for tablet, as
+this project is my first time attempting to optimize the layout for different screen sizes.
+
+Another thing I would like to work on is improving the animation on some of the components, 
+for instance making the drop down menu slide down gradually or incorporate a locomotive scroll in which 
+the images ease in slowly by the time I scroll down to their sections. 
+
+Lastly, this project is great for backend development, so I believe I will come back to this project to
+work on the backend side when I feel comfortable in applying those required tech.
+
+
+### Useful resources
+
+- [Tailwind Documentation](https://tailwindcss.com/docs) - This helped me
+  immensely as the documentation had easy and clear styling and animation
+  examples, and I will use it going forward.
+  
+
+## Author
+
+- Website - [Kaixin Huang](https://www.your-site.com)
