@@ -19,7 +19,7 @@ const Menu = ({ onDropMenu }) => {
   };
 
   return (
-    <motion.section
+    <motion.aside
       initial={{ y: 100 }}
       animate={{
         y: 0,
@@ -76,7 +76,7 @@ const Menu = ({ onDropMenu }) => {
           );
         })}
       </motion.ul>
-    </motion.section>
+    </motion.aside>
   );
 };
 
