@@ -3,7 +3,7 @@
 ## Table of contents
 
 - [Overview](#overview)
-  - [Screenshot](#screenshot)
+  - [Getting Started](#getting-started)
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
@@ -13,6 +13,26 @@
 - [Author](#author)
 
 ## Overview
+
+### Getting Started 
+
+First, install all the necessary dependencies:
+
+```bash
+npm install
+# or
+yarn install
+```
+
+Then, run the development server:
+
+```bash
+npm start
+# or
+yarn start
+```
+
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
 You should be able to:
 
@@ -25,13 +45,6 @@ You should be able to:
 - See correct checkout totals depending on the products in the cart
   - Shipping always adds $50 to the order
 - See an order confirmation modal after checking out with an order summary
-
-
-### Screenshot
-
-![Desktop Homepage](screenshot/desktop-homepage.png)
-
-For more photos, please see the screenshot folder.
 
 
 ### Links
