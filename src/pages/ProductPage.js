@@ -39,10 +39,10 @@ const ProductPage = ({
       <ReturnButton category={category} />
 
       {/* Product Info */}
-      <section className='grid px-6 py-10 pb-24 t:pb-32 t:px-12 d:px-40 gap-20'>
+      <ul className='grid px-6 py-10 pb-24 t:pb-32 t:px-12 d:px-40 gap-20'>
         {specifiedProduct.map((product) => {
           return (
-            <section key={product.id} className='grid text-center gap-28'>
+            <li key={product.id} className='grid text-center gap-28'>
               <ProductDescription
                 product={product}
                 onAddtoCart={onAddtoCart}
@@ -51,10 +51,10 @@ const ProductPage = ({
               <FeaturesAndInBox product={product} />
               <Gallery product={product} />
               <Recommend product={product} />
-            </section>
+            </li>
           );
         })}
-      </section>
+      </ul>
 
       {/* Categories */}
       <section className='grid px-6 pb-24 text-sm gap-20 bg-white rounded-lg t:grid-cols-3 t:gap-5 t:px-12 d:px-40 d:pt-24'>

@@ -23,9 +23,9 @@ const Product = ({ productNum, productName }) => {
             productNum === 0 ? "transform -rotate-6" : "transform -rotate-1"
           }`}
         />
-        <section className='h-10'>
+        <div className='h-10'>
           <img src={shadow} alt='shadow' className='transform -translate-y-9' />
-        </section>
+        </div>
         <section className='grid justify-items-center gap-4'>
           <p className='font-semibold tracking-wider'>{productName}</p>
           <section className='grid grid-flow-col auto-cols-max gap-3'>

@@ -2,15 +2,15 @@ import { Link } from "react-router-dom";
 
 const Summary = ({ cart, total }) => {
   return (
-    <main className='grid d:col-span-2 gap-8 px-6 py-10 m-6 mt-10 mb-32 t:mx-12 d:mx-40 d:ml-10 d:mt-6 bg-white rounded-lg'>
+    <section className='grid d:col-span-2 gap-8 px-6 py-10 m-6 mt-10 mb-32 t:mx-12 d:mx-40 d:ml-10 d:mt-6 bg-white rounded-lg'>
       <h3 className='text-lg font-medium tracking-widest'>SUMMARY</h3>
       <ul className='grid gap-6'>
         {cart.map((product, index) => {
           return (
             <li key={index} className='grid grid-cols-4 items-center text-sm'>
-              <section
+              <div
                 className={`bg-no-repeat bg-center bg-cover bg-${product.id} h-16 w-16 rounded-lg`}
-              ></section>
+              ></div>
               <section className='grid ml-2 col-span-2'>
                 <h5 className='font-semibold'>{product.name}</h5>
                 <h5 className='text-black text-opacity-50 font-semibold tracking-wider'>
@@ -57,7 +57,7 @@ const Summary = ({ cart, total }) => {
           CONTINUE &amp; PAY
         </button>
       </Link>
-    </main>
+    </section>
   );
 };
 

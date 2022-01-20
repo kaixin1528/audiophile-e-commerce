@@ -4,31 +4,31 @@ import cash from "../assets/cart/cash.svg";
 
 const BillingDetails = ({ payment, onPayment }) => {
   return (
-    <main className='grid d:col-span-3 gap-10 px-6 py-8 m-6 mb-0 t:px-10 t:mx-12 d:ml-40 d:mr-0 d:mb-32 bg-white rounded-lg'>
+    <section className='grid d:col-span-3 gap-10 px-6 py-8 m-6 mb-0 t:px-10 t:mx-12 d:ml-40 d:mr-0 d:mb-32 bg-white rounded-lg'>
       <h2 className='text-2xl font-medium'>CHECKOUT</h2>
       <form className='grid gap-10'>
         <section className='grid gap-5'>
           <h4 className='font-medium text-moderate-orange'>BILLING DETAILS</h4>
-          <section className='grid t:grid-cols-2 gap-5'>
+          <div className='grid t:grid-cols-2 gap-5'>
             <Input input='Name' placeholder='Alexel Ward' />
             <Input input='Email Address' placeholder='alexel@mail.com' />
             <Input input='Phone Number' placeholder='+1 202-555-0136' />
-          </section>
+          </div>
         </section>
         <section className='grid gap-5'>
           <h4 className='font-medium text-moderate-orange'>SHIPPING INFO</h4>
           <Input input='Your Address' placeholder='1137 Williams Avenue' />
-          <section className='grid t:grid-cols-2 gap-5'>
+          <div className='grid t:grid-cols-2 gap-5'>
             <Input input='ZIP Code' placeholder='10001' />
             <Input input='City' placeholder='New York' />
             <Input input='Country' placeholder='United States' />
-          </section>
+          </div>
         </section>
         <section className='grid gap-5'>
           <h4 className='font-medium text-moderate-orange'>PAYMENT DETAILS</h4>
-          <section className='grid t:grid-cols-2 gap-5'>
+          <div className='grid t:grid-cols-2 gap-5'>
             <h5 className='font-medium text-sm'>Payment Method</h5>
-            <section className='grid gap-5'>
+            <div className='grid gap-5'>
               <PaymentMethod
                 method='e-Money'
                 payment={payment}
@@ -39,8 +39,8 @@ const BillingDetails = ({ payment, onPayment }) => {
                 payment={payment}
                 onPayment={onPayment}
               />
-            </section>
-          </section>
+            </div>
+          </div>
         </section>
         {payment === "e-Money" && (
           <section className='grid t:grid-cols-2 gap-5'>
@@ -59,7 +59,7 @@ const BillingDetails = ({ payment, onPayment }) => {
           </p>
         </article>
       )}
-    </main>
+    </section>
   );
 };
 

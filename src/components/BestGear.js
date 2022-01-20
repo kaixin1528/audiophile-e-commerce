@@ -2,8 +2,8 @@ import desktopBestgear from "../assets/shared/desktop/image-best-gear.jpg";
 
 const BestGear = () => {
   return (
-    <main className='grid text-center gap-10 px-6 t:px-12 d:px-40 d:grid-cols-2 d:items-center d:pb-20'>
-      <section className='justify-self-center rounded-lg bg-no-repeat bg-center bg-cover bg-m-bestgear t:bg-t-bestgear h-96 w-full d:hidden'></section>
+    <section className='grid text-center gap-10 px-6 t:px-12 d:px-40 d:grid-cols-2 d:items-center d:pb-20'>
+      <div className='justify-self-center rounded-lg bg-no-repeat bg-center bg-cover bg-m-bestgear t:bg-t-bestgear h-96 w-full d:hidden'></div>
       <article className='grid gap-10'>
         <h2 className='text-3xl tracking-wide font-semibold t:text-4xl t:w-4/6 t:mx-auto d:text-left d:ml-0'>
           BRINGING YOU THE <span className='text-moderate-orange'>BEST</span>{" "}
@@ -23,7 +23,7 @@ const BestGear = () => {
         alt='best gear'
         className='hidden d:inline rounded-lg w-full'
       />
-    </main>
+    </section>
   );
 };
 

@@ -13,10 +13,10 @@ const ProductDescription = ({ product, onAddtoCart, onTotal }) => {
   };
 
   return (
-    <main className='grid t:grid-cols-2 gap-10 items-center'>
-      <section
+    <section className='grid t:grid-cols-2 gap-10 items-center'>
+      <div
         className={`d:grid bg-light-gray rounded-lg bg-no-repeat bg-center bg-cover bg-m-${product.slug} t:bg-t-${product.slug} d:bg-d-${product.slug} h-96 w-full`}
-      ></section>
+      ></div>
       <section className='grid gap-7 justify-items-start'>
         {product.new && (
           <h4 className='text-moderate-orange font-light text-left d:pl-20'>
@@ -67,7 +67,7 @@ const ProductDescription = ({ product, onAddtoCart, onTotal }) => {
           </button>
         </section>
       </section>
-    </main>
+    </section>
   );
 };
 

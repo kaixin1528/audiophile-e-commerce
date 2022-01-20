@@ -6,14 +6,14 @@ import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <main className='grid text-xs t:pl-8 d:grid-cols-2 d:pb-12 d:px-40 d:items-center bg-footer gap-10'>
-      <section className='grid grid-cols-3 gap-5'>
+    <footer className='grid text-xs t:pl-8 d:grid-cols-2 d:pb-12 d:px-40 d:items-center bg-footer gap-10'>
+      <div className='grid grid-cols-3 gap-5'>
         <img
           src={logo}
           alt='audiophile'
           className='col-start-2 t:col-start-1 justify-self-center t:justify-self-start t:ml-4 d:ml-0 pt-10 border-t-8 border-moderate-orange'
         />
-      </section>
+      </div>
       <nav className='grid mx-auto text-white gap-5 t:mx-0 t:grid-flow-col t:auto-cols-max t:justify-items-start t:pl-4 t:gap-10 d:grid-cols-3 d:justify-self-end d:pt-12'>
         <Link to='/headphones' className='justify-self-center'>
           <button className='font-medium tracking-widest hover:text-moderate-orange'>
@@ -65,7 +65,7 @@ const Footer = () => {
           </button>
         </nav>
       </section>
-    </main>
+    </footer>
   );
 };
 

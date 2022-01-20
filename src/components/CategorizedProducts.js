@@ -2,13 +2,13 @@ import { Link } from "react-router-dom";
 
 const CategorizedProducts = ({ key, product }) => {
   return (
-    <main
+    <section
       key={key}
       className='grid d:grid-cols-2 d:items-center text-center gap-8 d:gap-5 d:flex d:even:flex-row-reverse'
     >
-      <section
+      <div
         className={`d:grid bg-light-gray rounded-lg bg-no-repeat bg-center bg-cover bg-m-${product.slug}-preview t:bg-t-${product.slug}-preview d:bg-d-${product.slug}-preview h-96 d:bg-contain w-full`}
-      ></section>
+      ></div>
       <section className='grid gap-6'>
         {product.new && (
           <h4 className='text-moderate-orange font-light d:text-left d:pl-20'>
@@ -29,7 +29,7 @@ const CategorizedProducts = ({ key, product }) => {
           <button className='text-sm font-semibold'>SEE PRODUCT</button>
         </Link>
       </section>
-    </main>
+    </section>
   );
 };
 

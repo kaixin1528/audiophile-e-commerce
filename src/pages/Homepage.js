@@ -34,7 +34,7 @@ const Homepage = ({
         <Header onDropMenu={onDropMenu} onOpenCart={onOpenCart} />
 
         {/* Intro Description */}
-        <motion.section
+        <motion.div
           variants={introVariants}
           initial='hidden'
           animate='visible'
@@ -71,7 +71,7 @@ const Homepage = ({
               SEE PRODUCT
             </motion.button>
           </Link>
-        </motion.section>
+        </motion.div>
       </section>
 
       {/* Categories */}
@@ -130,7 +130,7 @@ const Homepage = ({
 
       {/* YX1 Earphone */}
       <section className='grid gap-6 mx-6 t:mx-12 d:mx-40 t:grid-cols-2 t:gap-4 t:mb-12'>
-        <section className='justify-self-center rounded-lg bg-no-repeat bg-center bg-cover bg-m-earphone t:bg-t-earphone d:bg-d-earphone h-96 w-full'></section>
+        <div className='justify-self-center rounded-lg bg-no-repeat bg-center bg-cover bg-m-earphone t:bg-t-earphone d:bg-d-earphone h-96 w-full'></div>
         <section className='grid justify-items-start px-8 py-16 t:py-32 d:px-20 mb-24 t:mb-0 gap-10 rounded-lg bg-light-gray'>
           <h2 className='text-3xl font-semibold tracking-wider'>
             YX1 EARPHONES

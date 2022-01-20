@@ -10,8 +10,8 @@ const Cart = ({
   onOpenCart,
 }) => {
   return (
-    <section className='absolute inset-0 top-24 px-6 t:px-20 d:px-40 bg-gray-600 bg-opacity-50'>
-      <main className='grid t:absolute t:right-20 d:right-40 mt-10 bg-white p-6 rounded-lg gap-10 t:w-96 d:w-1/4'>
+    <div className='absolute inset-0 top-24 px-6 t:px-20 d:px-40 bg-gray-600 bg-opacity-50'>
+      <section className='grid t:absolute t:right-20 d:right-40 mt-10 bg-white p-6 rounded-lg gap-10 t:w-96 d:w-1/4'>
         <header className='grid grid-cols-2'>
           <h3 className='text-lg tracking-wider font-semibold'>
             CART ({cart.length})
@@ -27,9 +27,9 @@ const Cart = ({
           {cart.map((product) => {
             return (
               <li className='grid grid-cols-3 items-center'>
-                <section
+                <div
                   className={`bg-no-repeat bg-center bg-cover bg-${product.id} h-16 w-16 rounded-lg`}
-                ></section>
+                ></div>
                 <section className='grid gap-1 -ml-4'>
                   <h4 className='font-semibold tracking-wider'>
                     {product.name}
@@ -77,8 +77,8 @@ const Cart = ({
             CHECKOUT
           </button>
         </Link>
-      </main>
-    </section>
+      </section>
+    </div>
   );
 };
 

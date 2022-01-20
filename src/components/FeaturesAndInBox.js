@@ -1,6 +1,6 @@
 const FeaturesAndInBox = ({ product }) => {
   return (
-    <main className='grid d:grid-cols-7 d:items-start gap-28 d:gap-0'>
+    <section className='grid d:grid-cols-7 d:items-start gap-28 d:gap-0'>
       <section className='grid d:col-span-4 justify-items-start text-left gap-5'>
         <h2 className='text-2xl font-semibold tracking-wider'>FEATURES</h2>
         {product.features.split("\n\n").map((paragraph, index) => {
@@ -34,7 +34,7 @@ const FeaturesAndInBox = ({ product }) => {
           })}
         </ul>
       </section>
-    </main>
+    </section>
   );
 };
 
