@@ -149,8 +149,8 @@ Another thing I would like to work on is improving the animation on some of the 
 for instance making the drop down menu slide down gradually or incorporate a locomotive scroll in which 
 the images ease in slowly by the time I scroll down to their sections. 
 
-Lastly, this project is great for backend development, so I believe I will come back to this project to
-work on the backend side when I feel comfortable in applying those required tech.
+Lastly, this project is great for backend development, so when I feel more comfortable I would switch to making API calls instead of 
+using React's state management.
 
 
 ### Useful resources
@@ -162,4 +162,4 @@ work on the backend side when I feel comfortable in applying those required tech
 
 ## Author
 
-- Website - [Kaixin Huang](https://www.your-site.com)
+- Portfolio Website - [Kaixin Huang](https://www.kaixin-portfolio.netlify.app)
