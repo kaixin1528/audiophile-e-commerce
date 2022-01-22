@@ -5,7 +5,6 @@ import arrow from "./../assets/cart/arrow.svg";
 import shadow from "./../assets/cart/oval-shadow.svg";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import { url } from "../lib/Constant";
 
 const Menu = ({ onDropMenu }) => {
   const products = [
@@ -42,28 +41,9 @@ const Menu = ({ onDropMenu }) => {
       >
         {[...Array(3)].map((e, i) => {
           return (
-<<<<<<< HEAD
-            <li>
-              <motion.a
-                href={`${url}/${products[i]["link"]}`}
-                className='btn-product'
-                variants={introVariants}
-                onClick={onDropMenu}
-              >
-                <img
-                  src={products[i]["src"]}
-                  alt='category'
-                  className={`-mt-20 mx-auto justify-self-center ${
-                    i === 0 ? "transform -rotate-6" : "transform -rotate-1"
-                  }`}
-                  onClick={onDropMenu}
-                />
-                <section className='h-10'>
-=======
             <Link to={`/${products[i]["link"]}`} className='btn-product'>
               <li>
                 <motion.button variants={introVariants} onClick={onDropMenu}>
->>>>>>> parent of 92ab309 (improved accessibility)
                   <img
                     src={products[i]["src"]}
                     alt='category'

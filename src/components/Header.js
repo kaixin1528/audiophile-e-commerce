@@ -3,7 +3,6 @@ import logo from "../assets/header/logo.svg";
 import cartImg from "../assets/header/cart.svg";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import { url } from "../lib/Constant";
 
 const Header = ({ onDropMenu, onOpenCart }) => {
   return (
@@ -21,40 +20,6 @@ const Header = ({ onDropMenu, onOpenCart }) => {
       >
         <img src={menu} alt='menu' />
       </button>
-<<<<<<< HEAD
-      <a href={`${url}`} className='justify-self-center d:justify-self-start'>
-        <img src={logo} alt='audiophile logo' />
-      </a>
-      <nav className='lg:grid grid-flow-col auto-cols-max hidden text-sm text-white gap-10 pt-1'>
-        <motion.a
-          href={`${url}`}
-          whileHover={{ scale: 1.1 }}
-          className='hover:text-moderate-orange'
-        >
-          HOME
-        </motion.a>
-        <motion.a
-          href={`${url}/headphones`}
-          whileHover={{ scale: 1.1 }}
-          className='hover:text-moderate-orange'
-        >
-          HEADPHONES
-        </motion.a>
-        <motion.a
-          href={`${url}/speakers`}
-          whileHover={{ scale: 1.1 }}
-          className='hover:text-moderate-orange'
-        >
-          SPEAKERS
-        </motion.a>
-        <motion.a
-          href={`${url}/earphones`}
-          whileHover={{ scale: 1.1 }}
-          className='hover:text-moderate-orange'
-        >
-          EARPHONES
-        </motion.a>
-=======
       <Link to='/' className='justify-self-center d:justify-self-start'>
         <button className=''>
           <img src={logo} alt='logo' />
@@ -93,7 +58,6 @@ const Header = ({ onDropMenu, onOpenCart }) => {
             EARPHONES
           </motion.button>
         </Link>
->>>>>>> parent of 92ab309 (improved accessibility)
       </nav>
       <button
         className='justify-self-end z-10 transition duration-100 ease-out origin-top-right transform hover:scale-110'

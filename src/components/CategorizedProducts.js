@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-import { url } from "../lib/Constant";
-=======
 import { Link } from "react-router-dom";
->>>>>>> parent of 92ab309 (improved accessibility)
 
 const CategorizedProducts = ({ key, product }) => {
   return (
@@ -26,15 +22,9 @@ const CategorizedProducts = ({ key, product }) => {
         <p className='leading-7 text-black text-opacity-50 font-light px-4 t:w-4/5 t:mx-auto d:w-3/5 d:text-left d:mx-20 d:px-0'>
           {product.description}
         </p>
-<<<<<<< HEAD
-        <a
-          href={`${url}/${product.category}/${product.slug}`}
-          className='text-sm font-semibold bg-moderate-orange hover:bg-opacity-70 text-white mx-auto py-3 px-7 d:ml-20'
-=======
         <Link
           to={`${product.slug}`}
           className='bg-moderate-orange hover:bg-opacity-70 text-white mx-auto py-3 px-7 d:ml-20'
->>>>>>> parent of 92ab309 (improved accessibility)
         >
           <button className='text-sm font-semibold'>SEE PRODUCT</button>
         </Link>

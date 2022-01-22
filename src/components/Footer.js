@@ -2,11 +2,7 @@ import logo from "../assets/header/logo.svg";
 import facebook from "../assets/shared/logos/facebook.svg";
 import twitter from "../assets/shared/logos/twitter.svg";
 import instagram from "../assets/shared/logos/instagram.svg";
-<<<<<<< HEAD
-import { url } from "../lib/Constant";
-=======
 import { Link } from "react-router-dom";
->>>>>>> parent of 92ab309 (improved accessibility)
 
 const Footer = () => {
   return (
@@ -19,26 +15,6 @@ const Footer = () => {
         />
       </div>
       <nav className='grid mx-auto text-white gap-5 t:mx-0 t:grid-flow-col t:auto-cols-max t:justify-items-start t:pl-4 t:gap-10 d:grid-cols-3 d:justify-self-end d:pt-12'>
-<<<<<<< HEAD
-        <a
-          href={`${url}/headphones`}
-          className='justify-self-center font-medium tracking-widest hover:text-moderate-orange'
-        >
-          HEADPHONES
-        </a>
-        <a
-          href={`${url}/speakers`}
-          className='justify-self-center font-medium tracking-widest hover:text-moderate-orange'
-        >
-          SPEAKERS
-        </a>
-        <a
-          href={`${url}/earphones`}
-          className='justify-self-center font-medium tracking-widest hover:text-moderate-orange'
-        >
-          EARPHONES
-        </a>
-=======
         <Link to='/headphones' className='justify-self-center'>
           <button className='font-medium tracking-widest hover:text-moderate-orange'>
             HEADPHONES
@@ -54,7 +30,6 @@ const Footer = () => {
             EARPHONES
           </button>
         </Link>
->>>>>>> parent of 92ab309 (improved accessibility)
       </nav>
 
       <p className='font-light text-sm leading-7 text-white text-opacity-50 px-6 text-center t:px-4 t:text-left t:w-4/5 d:px-0'>

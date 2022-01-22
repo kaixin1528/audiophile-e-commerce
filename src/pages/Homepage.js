@@ -7,7 +7,6 @@ import Menu from "../components/Menu";
 import ScrollToTop from "../components/ScrollToTop";
 import { Link } from "react-router-dom";
 import { AnimatePresence, motion } from "framer-motion";
-import { url } from "../lib/Constant";
 
 import bigSpeaker from "../assets/home/mobile/zx9-speaker.svg";
 import desktopSpeaker from "../assets/home/desktop/image-speaker-zx9.png";
@@ -63,16 +62,6 @@ const Homepage = ({
             Experience natural, lifelike audio and exceptional build quality
             made for the passionate music enthusiast.
           </motion.p>
-<<<<<<< HEAD
-          <motion.a
-            href={`${url}/headphones/xx99-mark-two-headphones`}
-            variants={introVariants}
-            whileHover={{ scale: 1.05 }}
-            className='text-sm font-semibold bg-moderate-orange text-white py-3 px-6 mx-auto d:ml-0'
-          >
-            SEE PRODUCT
-          </motion.a>
-=======
           <Link to='/headphones/xx99-mark-two-headphones'>
             <motion.button
               variants={introVariants}
@@ -82,7 +71,6 @@ const Homepage = ({
               SEE PRODUCT
             </motion.button>
           </Link>
->>>>>>> parent of 92ab309 (improved accessibility)
         </motion.div>
       </section>
 
@@ -109,15 +97,6 @@ const Homepage = ({
             Upgrade to premium speakers that are phenomenally built to deliver
             truly remarkable sound.
           </p>
-<<<<<<< HEAD
-          <motion.a
-            href={`${url}/speakers/zx9-speaker`}
-            whileHover={{ scale: 1.05, transition: { duration: 0.3 } }}
-            className='text-sm font-semibold tracking-wider bg-black hover:bg-opacity-80 text-white p-5 px-8 t:px-10 mx-auto d:ml-32'
-          >
-            SEE PRODUCT
-          </motion.a>
-=======
           <Link to='/speakers/zx9-speaker' className='mx-auto d:ml-0'>
             <motion.button
               whileHover={{ scale: 1.1, transition: { duration: 0.3 } }}
@@ -126,7 +105,6 @@ const Homepage = ({
               SEE PRODUCT
             </motion.button>
           </Link>
->>>>>>> parent of 92ab309 (improved accessibility)
         </section>
       </motion.section>
 
@@ -135,20 +113,6 @@ const Homepage = ({
         <h2 className='text-3xl font-semibold d:font-bold tracking-wider pl-8 t:pl-12 d:pl-24'>
           ZX7 SPEAKER
         </h2>
-<<<<<<< HEAD
-        <motion.a
-          href={`${url}/speakers/zx7-speaker`}
-          whileHover={{
-            scale: 1.05,
-            backgroundColor: "black",
-            color: "white",
-            transition: { duration: 0.3 },
-          }}
-          className='text-sm ml-8 font-semibold d:font-bold tracking-wider p-3 px-8 ring-1 ring-black t:ml-12 d:ml-24'
-        >
-          SEE PRODUCT
-        </motion.a>
-=======
         <Link to='/speakers/zx7-speaker'>
           <motion.button
             whileHover={{
@@ -162,7 +126,6 @@ const Homepage = ({
             SEE PRODUCT
           </motion.button>
         </Link>
->>>>>>> parent of 92ab309 (improved accessibility)
       </section>
 
       {/* YX1 Earphone */}
@@ -172,20 +135,6 @@ const Homepage = ({
           <h2 className='text-3xl font-semibold tracking-wider'>
             YX1 EARPHONES
           </h2>
-<<<<<<< HEAD
-          <motion.a
-            href={`${url}/earphones/yx1-earphones`}
-            whileHover={{
-              scale: 1.05,
-              backgroundColor: "black",
-              color: "white",
-              transition: { duration: 0.3 },
-            }}
-            className='font-semibold tracking-wider p-3 px-8 text-sm ring-1 ring-black'
-          >
-            SEE PRODUCT
-          </motion.a>
-=======
           <Link to='/earphones/yx1-earphones'>
             <motion.button
               whileHover={{
@@ -199,7 +148,6 @@ const Homepage = ({
               SEE PRODUCT
             </motion.button>
           </Link>
->>>>>>> parent of 92ab309 (improved accessibility)
         </section>
       </section>
 
