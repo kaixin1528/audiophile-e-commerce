@@ -1,5 +1,3 @@
-import { Link } from "react-router-dom";
-
 const Summary = ({ cart, total }) => {
   return (
     <section className='grid d:col-span-2 gap-8 px-6 py-10 m-6 mt-10 mb-32 t:mx-12 d:mx-40 d:ml-10 d:mt-6 bg-white rounded-lg'>
@@ -52,11 +50,12 @@ const Summary = ({ cart, total }) => {
           $ {total + 50 + Math.round(total * 0.2)}
         </h5>
       </section>
-      <Link to='/checkout/confirmation'>
-        <button className='text-sm font-medium bg-moderate-orange hover:bg-opacity-50 text-white tracking-wider p-4 px-5 w-full'>
-          CONTINUE &amp; PAY
-        </button>
-      </Link>
+      <a
+        href='/checkout/confirmation'
+        className='text-sm font-medium bg-moderate-orange hover:bg-opacity-50 text-white tracking-wider text-center p-4 px-5 w-full'
+      >
+        CONTINUE &amp; PAY
+      </a>
     </section>
   );
 };

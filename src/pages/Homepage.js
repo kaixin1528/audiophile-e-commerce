@@ -5,7 +5,6 @@ import Footer from "../components/Footer";
 import Cart from "../components/Cart";
 import Menu from "../components/Menu";
 import ScrollToTop from "../components/ScrollToTop";
-import { Link } from "react-router-dom";
 import { AnimatePresence, motion } from "framer-motion";
 
 import bigSpeaker from "../assets/home/mobile/zx9-speaker.svg";
@@ -62,15 +61,14 @@ const Homepage = ({
             Experience natural, lifelike audio and exceptional build quality
             made for the passionate music enthusiast.
           </motion.p>
-          <Link to='/headphones/xx99-mark-two-headphones'>
-            <motion.button
-              variants={introVariants}
-              whileHover={{ scale: 1.1 }}
-              className='text-sm font-semibold bg-moderate-orange text-white py-3 px-6 mx-auto d:ml-0'
-            >
-              SEE PRODUCT
-            </motion.button>
-          </Link>
+          <motion.a
+            href='/headphones/xx99-mark-two-headphones'
+            variants={introVariants}
+            whileHover={{ scale: 1.1 }}
+            className='text-sm font-semibold bg-moderate-orange text-white py-3 px-6 mx-auto d:ml-0'
+          >
+            SEE PRODUCT
+          </motion.a>
         </motion.div>
       </section>
 
@@ -97,14 +95,13 @@ const Homepage = ({
             Upgrade to premium speakers that are phenomenally built to deliver
             truly remarkable sound.
           </p>
-          <Link to='/speakers/zx9-speaker' className='mx-auto d:ml-0'>
-            <motion.button
-              whileHover={{ scale: 1.1, transition: { duration: 0.3 } }}
-              className='text-sm font-semibold tracking-wider bg-black hover:bg-opacity-80 text-white p-5 px-8 t:px-10 mx-auto d:ml-32'
-            >
-              SEE PRODUCT
-            </motion.button>
-          </Link>
+          <motion.a
+            href='/speakers/zx9-speaker'
+            whileHover={{ scale: 1.1, transition: { duration: 0.3 } }}
+            className='text-sm font-semibold tracking-wider bg-black hover:bg-opacity-80 text-white p-5 px-8 t:px-10 mx-auto d:ml-32'
+          >
+            SEE PRODUCT
+          </motion.a>
         </section>
       </motion.section>
 
@@ -113,19 +110,18 @@ const Homepage = ({
         <h2 className='text-3xl font-semibold d:font-bold tracking-wider pl-8 t:pl-12 d:pl-24'>
           ZX7 SPEAKER
         </h2>
-        <Link to='/speakers/zx7-speaker'>
-          <motion.button
-            whileHover={{
-              scale: 1.1,
-              backgroundColor: "black",
-              color: "white",
-              transition: { duration: 0.3 },
-            }}
-            className='text-sm ml-8 font-semibold d:font-bold tracking-wider p-3 px-8 ring-1 ring-black t:ml-12 d:ml-24'
-          >
-            SEE PRODUCT
-          </motion.button>
-        </Link>
+        <motion.a
+          href='/speakers/zx7-speaker'
+          whileHover={{
+            scale: 1.1,
+            backgroundColor: "black",
+            color: "white",
+            transition: { duration: 0.3 },
+          }}
+          className='text-sm ml-8 font-semibold d:font-bold tracking-wider p-3 px-8 ring-1 ring-black t:ml-12 d:ml-24'
+        >
+          SEE PRODUCT
+        </motion.a>
       </section>
 
       {/* YX1 Earphone */}
@@ -135,19 +131,18 @@ const Homepage = ({
           <h2 className='text-3xl font-semibold tracking-wider'>
             YX1 EARPHONES
           </h2>
-          <Link to='/earphones/yx1-earphones'>
-            <motion.button
-              whileHover={{
-                scale: 1.1,
-                backgroundColor: "black",
-                color: "white",
-                transition: { duration: 0.3 },
-              }}
-              className='font-semibold tracking-wider p-3 px-8 text-sm ring-1 ring-black'
-            >
-              SEE PRODUCT
-            </motion.button>
-          </Link>
+          <motion.a
+            href='/earphones/yx1-earphones'
+            whileHover={{
+              scale: 1.1,
+              backgroundColor: "black",
+              color: "white",
+              transition: { duration: 0.3 },
+            }}
+            className='font-semibold tracking-wider p-3 px-8 text-sm ring-1 ring-black'
+          >
+            SEE PRODUCT
+          </motion.a>
         </section>
       </section>
 

@@ -1,5 +1,3 @@
-import { Link } from "react-router-dom";
-
 const Cart = ({
   cart,
   onRemoveAll,
@@ -69,14 +67,13 @@ const Cart = ({
           <h4 className='font-light text-black text-opacity-50'>TOTAL</h4>
           <h3 className='text-lg font-semibold justify-self-end'>$ {total}</h3>
         </section>
-        <Link to='/checkout'>
-          <button
-            className='text-sm bg-moderate-orange hover:bg-opacity-50 font-semibold text-white tracking-wider py-3 px-5 w-full'
-            onClick={onOpenCart}
-          >
-            CHECKOUT
-          </button>
-        </Link>
+        <a
+          href='/checkout'
+          className='text-sm bg-moderate-orange hover:bg-opacity-50 font-semibold text-white tracking-wider text-center py-3 w-full'
+          onClick={onOpenCart}
+        >
+          CHECKOUT
+        </a>
       </section>
     </div>
   );

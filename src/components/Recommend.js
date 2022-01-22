@@ -1,5 +1,3 @@
-import { Link } from "react-router-dom";
-
 const Recommend = ({ product }) => {
   return (
     <section className='grid text-center gap-10'>
@@ -16,14 +14,12 @@ const Recommend = ({ product }) => {
               <h2 className='text-2xl font-semibold tracking-wider'>
                 {other.name.toUpperCase()}
               </h2>
-              <Link
-                to={`/${other.category}/${other.slug}`}
-                className='bg-moderate-orange hover:bg-opacity-70 text-white mx-auto py-4 px-8'
+              <a
+                href={`/${other.category}/${other.slug}`}
+                className='text-sm font-semibold tracking-wider bg-moderate-orange hover:bg-opacity-70 text-white mx-auto py-4 px-8'
               >
-                <button className='text-sm font-semibold tracking-wider'>
-                  SEE PRODUCT
-                </button>
-              </Link>
+                SEE PRODUCT
+              </a>
             </li>
           );
         })}

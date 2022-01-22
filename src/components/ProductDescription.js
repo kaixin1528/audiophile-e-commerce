@@ -15,7 +15,7 @@ const ProductDescription = ({ product, onAddtoCart, onTotal }) => {
   return (
     <section className='grid t:grid-cols-2 gap-10 items-center'>
       <div
-        className={`d:grid bg-light-gray rounded-lg bg-no-repeat bg-center bg-cover bg-m-${product.slug} t:bg-t-${product.slug} d:bg-d-${product.slug} h-96 w-full`}
+        className={`d:grid bg-light-gray rounded-lg bg-no-repeat bg-center bg-contain bg-m-${product.slug} t:bg-t-${product.slug} d:bg-d-${product.slug} h-96 w-full`}
       ></div>
       <section className='grid gap-7 justify-items-start'>
         {product.new && (
