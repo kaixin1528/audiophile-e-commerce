@@ -2,6 +2,7 @@ import menu from "../assets/header/menu.svg";
 import logo from "../assets/header/logo.svg";
 import cartImg from "../assets/header/cart.svg";
 import { motion } from "framer-motion";
+import { url } from "../lib/Constant";
 
 const Header = ({ onDropMenu, onOpenCart }) => {
   return (
@@ -19,33 +20,33 @@ const Header = ({ onDropMenu, onOpenCart }) => {
       >
         <img src={menu} alt='menu' />
       </button>
-      <a href='/' className='justify-self-center d:justify-self-start'>
+      <a href={`${url}`} className='justify-self-center d:justify-self-start'>
         <img src={logo} alt='audiophile logo' />
       </a>
       <nav className='lg:grid grid-flow-col auto-cols-max hidden text-sm text-white gap-10 pt-1'>
         <motion.a
-          href='/'
+          href={`${url}`}
           whileHover={{ scale: 1.1 }}
           className='hover:text-moderate-orange'
         >
           HOME
         </motion.a>
         <motion.a
-          href='/headphones'
+          href={`${url}/headphones`}
           whileHover={{ scale: 1.1 }}
           className='hover:text-moderate-orange'
         >
           HEADPHONES
         </motion.a>
         <motion.a
-          href='/speakers'
+          href={`${url}/speakers`}
           whileHover={{ scale: 1.1 }}
           className='hover:text-moderate-orange'
         >
           SPEAKERS
         </motion.a>
         <motion.a
-          href='/earphones'
+          href={`${url}/earphones`}
           whileHover={{ scale: 1.1 }}
           className='hover:text-moderate-orange'
         >

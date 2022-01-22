@@ -4,6 +4,7 @@ import earphone from "./../assets/cart/earphone.svg";
 import arrow from "./../assets/cart/arrow.svg";
 import shadow from "./../assets/cart/oval-shadow.svg";
 import { motion } from "framer-motion";
+import { url } from "../lib/Constant";
 
 const Product = ({ productNum, productName }) => {
   const products = [
@@ -13,7 +14,10 @@ const Product = ({ productNum, productName }) => {
   ];
 
   return (
-    <motion.a href={`/${products[productNum]["link"]}`} className='btn-product'>
+    <motion.a
+      href={`${url}/${products[productNum]["link"]}`}
+      className='btn-product'
+    >
       <img
         src={products[productNum]["src"]}
         alt='product'

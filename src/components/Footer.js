@@ -2,6 +2,7 @@ import logo from "../assets/header/logo.svg";
 import facebook from "../assets/shared/logos/facebook.svg";
 import twitter from "../assets/shared/logos/twitter.svg";
 import instagram from "../assets/shared/logos/instagram.svg";
+import { url } from "../lib/Constant";
 
 const Footer = () => {
   return (
@@ -15,19 +16,19 @@ const Footer = () => {
       </div>
       <nav className='grid mx-auto text-white gap-5 t:mx-0 t:grid-flow-col t:auto-cols-max t:justify-items-start t:pl-4 t:gap-10 d:grid-cols-3 d:justify-self-end d:pt-12'>
         <a
-          href='headphones'
+          href={`${url}/headphones`}
           className='justify-self-center font-medium tracking-widest hover:text-moderate-orange'
         >
           HEADPHONES
         </a>
         <a
-          href='speakers'
+          href={`${url}/speakers`}
           className='justify-self-center font-medium tracking-widest hover:text-moderate-orange'
         >
           SPEAKERS
         </a>
         <a
-          href='earphones'
+          href={`${url}/earphones`}
           className='justify-self-center font-medium tracking-widest hover:text-moderate-orange'
         >
           EARPHONES

@@ -6,6 +6,7 @@ import Cart from "../components/Cart";
 import Menu from "../components/Menu";
 import ScrollToTop from "../components/ScrollToTop";
 import { AnimatePresence, motion } from "framer-motion";
+import { url } from "../lib/Constant";
 
 import bigSpeaker from "../assets/home/mobile/zx9-speaker.svg";
 import desktopSpeaker from "../assets/home/desktop/image-speaker-zx9.png";
@@ -62,7 +63,7 @@ const Homepage = ({
             made for the passionate music enthusiast.
           </motion.p>
           <motion.a
-            href='/headphones/xx99-mark-two-headphones'
+            href={`${url}/headphones/xx99-mark-two-headphones`}
             variants={introVariants}
             whileHover={{ scale: 1.05 }}
             className='text-sm font-semibold bg-moderate-orange text-white py-3 px-6 mx-auto d:ml-0'
@@ -96,7 +97,7 @@ const Homepage = ({
             truly remarkable sound.
           </p>
           <motion.a
-            href='/speakers/zx9-speaker'
+            href={`${url}/speakers/zx9-speaker`}
             whileHover={{ scale: 1.05, transition: { duration: 0.3 } }}
             className='text-sm font-semibold tracking-wider bg-black hover:bg-opacity-80 text-white p-5 px-8 t:px-10 mx-auto d:ml-32'
           >
@@ -111,7 +112,7 @@ const Homepage = ({
           ZX7 SPEAKER
         </h2>
         <motion.a
-          href='/speakers/zx7-speaker'
+          href={`${url}/speakers/zx7-speaker`}
           whileHover={{
             scale: 1.05,
             backgroundColor: "black",
@@ -132,7 +133,7 @@ const Homepage = ({
             YX1 EARPHONES
           </h2>
           <motion.a
-            href='/earphones/yx1-earphones'
+            href={`${url}/earphones/yx1-earphones`}
             whileHover={{
               scale: 1.05,
               backgroundColor: "black",

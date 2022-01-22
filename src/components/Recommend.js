@@ -1,4 +1,6 @@
 import { motion } from "framer-motion";
+import { url } from "../lib/Constant";
+
 const Recommend = ({ product }) => {
   return (
     <section className='grid text-center gap-10'>
@@ -16,7 +18,7 @@ const Recommend = ({ product }) => {
                 {other.name.toUpperCase()}
               </h2>
               <motion.a
-                href={`/${other.category}/${other.slug}`}
+                href={`${url}/${other.category}/${other.slug}`}
                 whileHover={{ scale: 1.05 }}
                 className='text-sm font-semibold tracking-wider bg-moderate-orange hover:bg-opacity-70 text-white mx-auto py-4 px-8'
               >

@@ -4,6 +4,7 @@ import earphone from "./../assets/cart/earphone.svg";
 import arrow from "./../assets/cart/arrow.svg";
 import shadow from "./../assets/cart/oval-shadow.svg";
 import { motion } from "framer-motion";
+import { url } from "../lib/Constant";
 
 const Menu = ({ onDropMenu }) => {
   const products = [
@@ -42,7 +43,7 @@ const Menu = ({ onDropMenu }) => {
           return (
             <li>
               <motion.a
-                href={`/${products[i]["link"]}`}
+                href={`${url}/${products[i]["link"]}`}
                 className='btn-product'
                 variants={introVariants}
                 onClick={onDropMenu}

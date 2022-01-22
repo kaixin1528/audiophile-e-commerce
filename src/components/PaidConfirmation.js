@@ -1,4 +1,5 @@
 import check from "../assets/cart/check.svg";
+import { url } from "../lib/Constant";
 
 const PaidConfirmation = ({ cart, total, onRemoveAll }) => {
   return (
@@ -41,7 +42,7 @@ const PaidConfirmation = ({ cart, total, onRemoveAll }) => {
           </section>
         </section>
         <a
-          href='/'
+          href={`${url}`}
           className='text-sm bg-moderate-orange hover:bg-opacity-50 text-white tracking-wider text-center py-4 w-full'
           onClick={() => {
             onRemoveAll();

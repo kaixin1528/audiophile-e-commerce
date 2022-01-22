@@ -1,3 +1,4 @@
+import { url } from "../lib/Constant";
 const Cart = ({
   cart,
   onRemoveAll,
@@ -68,7 +69,7 @@ const Cart = ({
           <h3 className='text-lg font-semibold justify-self-end'>$ {total}</h3>
         </section>
         <a
-          href='/checkout'
+          href={`${url}/checkout`}
           className='text-sm bg-moderate-orange hover:bg-opacity-50 font-semibold text-white tracking-wider text-center py-3 w-full'
           onClick={onOpenCart}
         >

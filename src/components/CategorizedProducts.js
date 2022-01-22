@@ -1,3 +1,5 @@
+import { url } from "../lib/Constant";
+
 const CategorizedProducts = ({ key, product }) => {
   return (
     <section
@@ -21,7 +23,7 @@ const CategorizedProducts = ({ key, product }) => {
           {product.description}
         </p>
         <a
-          href={`${product.category}/${product.slug}`}
+          href={`${url}/${product.category}/${product.slug}`}
           className='text-sm font-semibold bg-moderate-orange hover:bg-opacity-70 text-white mx-auto py-3 px-7 d:ml-20'
         >
           SEE PRODUCT
