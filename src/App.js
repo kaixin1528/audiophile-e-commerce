@@ -3,7 +3,6 @@ import ProductPage from "./pages/ProductPage";
 import CategoriesPage from "./pages/CategoryPage";
 import CheckoutPage from "./pages/CheckoutPage";
 import ThankYouPage from "./pages/ThankYouPage";
-import { url } from "./lib/Constant";
 
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { useState } from "react";
@@ -92,7 +91,7 @@ function App() {
           }
         ></Route>
         <Route
-          path={`${url}/headphones`}
+          path='/headphones'
           element={
             <CategoriesPage
               dropMenu={dropMenu}
@@ -110,7 +109,7 @@ function App() {
           }
         ></Route>
         <Route
-          path={`${url}/speakers`}
+          path='/speakers'
           element={
             <CategoriesPage
               dropMenu={dropMenu}
@@ -128,7 +127,7 @@ function App() {
           }
         ></Route>
         <Route
-          path={`${url}/earphones`}
+          path='/earphones'
           element={
             <CategoriesPage
               dropMenu={dropMenu}
@@ -146,7 +145,7 @@ function App() {
           }
         ></Route>
         <Route
-          path={`${url}/headphones/xx99-mark-two-headphones`}
+          path='/headphones/xx99-mark-two-headphones'
           element={
             <ProductPage
               dropMenu={dropMenu}
@@ -165,7 +164,7 @@ function App() {
           }
         ></Route>
         <Route
-          path={`${url}/headphones/xx99-mark-one-headphones`}
+          path='/headphones/xx99-mark-one-headphones'
           element={
             <ProductPage
               dropMenu={dropMenu}
@@ -184,7 +183,7 @@ function App() {
           }
         ></Route>
         <Route
-          path={`${url}/headphones/xx59-headphones`}
+          path='/headphones/xx59-headphones'
           element={
             <ProductPage
               dropMenu={dropMenu}
@@ -203,7 +202,7 @@ function App() {
           }
         ></Route>
         <Route
-          path={`${url}/speakers/zx7-speaker`}
+          path='/speakers/zx7-speaker'
           element={
             <ProductPage
               dropMenu={dropMenu}
@@ -222,7 +221,7 @@ function App() {
           }
         ></Route>
         <Route
-          path={`${url}/speakers/zx9-speaker`}
+          path='/speakers/zx9-speaker'
           element={
             <ProductPage
               dropMenu={dropMenu}
@@ -241,7 +240,7 @@ function App() {
           }
         ></Route>
         <Route
-          path={`${url}/earphones/yx1-earphones`}
+          path='/earphones/yx1-earphones'
           element={
             <ProductPage
               dropMenu={dropMenu}
@@ -260,7 +259,7 @@ function App() {
           }
         ></Route>
         <Route
-          path={`${url}/checkout`}
+          path='/checkout'
           element={
             <CheckoutPage
               onDropMenu={handleDropMenu}
@@ -272,7 +271,7 @@ function App() {
           }
         ></Route>
         <Route
-          path={`${url}/checkout/confirmation`}
+          path='/checkout/confirmation'
           element={
             <ThankYouPage
               onDropMenu={handleDropMenu}
