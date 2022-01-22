@@ -64,7 +64,7 @@ const Homepage = ({
           <motion.a
             href='/headphones/xx99-mark-two-headphones'
             variants={introVariants}
-            whileHover={{ scale: 1.1 }}
+            whileHover={{ scale: 1.05 }}
             className='text-sm font-semibold bg-moderate-orange text-white py-3 px-6 mx-auto d:ml-0'
           >
             SEE PRODUCT
@@ -97,7 +97,7 @@ const Homepage = ({
           </p>
           <motion.a
             href='/speakers/zx9-speaker'
-            whileHover={{ scale: 1.1, transition: { duration: 0.3 } }}
+            whileHover={{ scale: 1.05, transition: { duration: 0.3 } }}
             className='text-sm font-semibold tracking-wider bg-black hover:bg-opacity-80 text-white p-5 px-8 t:px-10 mx-auto d:ml-32'
           >
             SEE PRODUCT
@@ -113,7 +113,7 @@ const Homepage = ({
         <motion.a
           href='/speakers/zx7-speaker'
           whileHover={{
-            scale: 1.1,
+            scale: 1.05,
             backgroundColor: "black",
             color: "white",
             transition: { duration: 0.3 },
@@ -134,7 +134,7 @@ const Homepage = ({
           <motion.a
             href='/earphones/yx1-earphones'
             whileHover={{
-              scale: 1.1,
+              scale: 1.05,
               backgroundColor: "black",
               color: "white",
               transition: { duration: 0.3 },

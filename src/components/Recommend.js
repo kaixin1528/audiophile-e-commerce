@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 const Recommend = ({ product }) => {
   return (
     <section className='grid text-center gap-10'>
@@ -14,12 +15,13 @@ const Recommend = ({ product }) => {
               <h2 className='text-2xl font-semibold tracking-wider'>
                 {other.name.toUpperCase()}
               </h2>
-              <a
+              <motion.a
                 href={`/${other.category}/${other.slug}`}
+                whileHover={{ scale: 1.05 }}
                 className='text-sm font-semibold tracking-wider bg-moderate-orange hover:bg-opacity-70 text-white mx-auto py-4 px-8'
               >
                 SEE PRODUCT
-              </a>
+              </motion.a>
             </li>
           );
         })}
