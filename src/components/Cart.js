@@ -1,4 +1,9 @@
+<<<<<<< HEAD
 import { url } from "../lib/Constant";
+=======
+import { Link } from "react-router-dom";
+
+>>>>>>> parent of 92ab309 (improved accessibility)
 const Cart = ({
   cart,
   onRemoveAll,
@@ -68,6 +73,7 @@ const Cart = ({
           <h4 className='font-light text-black text-opacity-50'>TOTAL</h4>
           <h3 className='text-lg font-semibold justify-self-end'>$ {total}</h3>
         </section>
+<<<<<<< HEAD
         <a
           href={`${url}/checkout`}
           className='text-sm bg-moderate-orange hover:bg-opacity-50 font-semibold text-white tracking-wider text-center py-3 w-full'
@@ -75,6 +81,16 @@ const Cart = ({
         >
           CHECKOUT
         </a>
+=======
+        <Link to='/checkout'>
+          <button
+            className='text-sm bg-moderate-orange hover:bg-opacity-50 font-semibold text-white tracking-wider py-3 px-5 w-full'
+            onClick={onOpenCart}
+          >
+            CHECKOUT
+          </button>
+        </Link>
+>>>>>>> parent of 92ab309 (improved accessibility)
       </section>
     </div>
   );

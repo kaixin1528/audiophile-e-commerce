@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import check from "../assets/cart/check.svg";
 import { url } from "../lib/Constant";
 
@@ -41,6 +42,7 @@ const PaidConfirmation = ({ cart, total, onRemoveAll }) => {
             <h3 className='text-lg text-white font-medium'>$ {total}</h3>
           </section>
         </section>
+<<<<<<< HEAD
         <a
           href={`${url}`}
           className='text-sm bg-moderate-orange hover:bg-opacity-50 text-white tracking-wider text-center py-4 w-full'
@@ -50,6 +52,18 @@ const PaidConfirmation = ({ cart, total, onRemoveAll }) => {
         >
           BACK TO HOME
         </a>
+=======
+        <Link to='/'>
+          <button
+            className='text-sm bg-moderate-orange hover:bg-opacity-50 text-white tracking-wider py-4 w-full'
+            onClick={() => {
+              onRemoveAll();
+            }}
+          >
+            BACK TO HOME
+          </button>
+        </Link>
+>>>>>>> parent of 92ab309 (improved accessibility)
       </section>
     </div>
   );

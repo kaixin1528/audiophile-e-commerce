@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 import { url } from "../lib/Constant";
+=======
+import { Link } from "react-router-dom";
+>>>>>>> parent of 92ab309 (improved accessibility)
 
 const CategorizedProducts = ({ key, product }) => {
   return (
@@ -7,7 +11,7 @@ const CategorizedProducts = ({ key, product }) => {
       className='grid d:grid-cols-2 d:items-center text-center gap-8 d:gap-5 d:flex d:even:flex-row-reverse'
     >
       <div
-        className={`d:grid bg-light-gray rounded-lg bg-no-repeat bg-center bg-cover bg-m-${product.slug}-preview t:bg-t-${product.slug}-preview d:bg-d-${product.slug}-preview h-96 bg-contain w-full`}
+        className={`d:grid bg-light-gray rounded-lg bg-no-repeat bg-center bg-cover bg-m-${product.slug}-preview t:bg-t-${product.slug}-preview d:bg-d-${product.slug}-preview h-96 d:bg-contain w-full`}
       ></div>
       <section className='grid gap-6'>
         {product.new && (
@@ -22,12 +26,18 @@ const CategorizedProducts = ({ key, product }) => {
         <p className='leading-7 text-black text-opacity-50 font-light px-4 t:w-4/5 t:mx-auto d:w-3/5 d:text-left d:mx-20 d:px-0'>
           {product.description}
         </p>
+<<<<<<< HEAD
         <a
           href={`${url}/${product.category}/${product.slug}`}
           className='text-sm font-semibold bg-moderate-orange hover:bg-opacity-70 text-white mx-auto py-3 px-7 d:ml-20'
+=======
+        <Link
+          to={`${product.slug}`}
+          className='bg-moderate-orange hover:bg-opacity-70 text-white mx-auto py-3 px-7 d:ml-20'
+>>>>>>> parent of 92ab309 (improved accessibility)
         >
-          SEE PRODUCT
-        </a>
+          <button className='text-sm font-semibold'>SEE PRODUCT</button>
+        </Link>
       </section>
     </section>
   );

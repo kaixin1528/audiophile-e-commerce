@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 import { url } from "../lib/Constant";
+=======
+import { Link } from "react-router-dom";
+>>>>>>> parent of 92ab309 (improved accessibility)
 
 const Summary = ({ cart, total }) => {
   return (
@@ -52,12 +56,20 @@ const Summary = ({ cart, total }) => {
           $ {total + 50 + Math.round(total * 0.2)}
         </h5>
       </section>
+<<<<<<< HEAD
       <a
         href={`${url}/checkout/confirmation`}
         className='text-sm font-medium bg-moderate-orange hover:bg-opacity-50 text-white tracking-wider text-center p-4 px-5 w-full'
       >
         CONTINUE &amp; PAY
       </a>
+=======
+      <Link to='/checkout/confirmation'>
+        <button className='text-sm font-medium bg-moderate-orange hover:bg-opacity-50 text-white tracking-wider p-4 px-5 w-full'>
+          CONTINUE &amp; PAY
+        </button>
+      </Link>
+>>>>>>> parent of 92ab309 (improved accessibility)
     </section>
   );
 };
