@@ -56,9 +56,9 @@ after checking out with an order summary.
 - CSS custom properties
 - CSS Grid
 - Javascript
+- React
+- Tailwind CSS
 - Mobile-first workflow
-- [React](https://reactjs.org/) 
-- [Tailwind](https://tailwindcss.com/) 
 
 
 ### What I learned
