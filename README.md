@@ -45,7 +45,7 @@ after checking out with an order summary.
 
 ### Links
 
-- Live Site URL: [https://kaixin-audiophile.netlify.app](https://kaixin-audiophile.netlify.app)
+- [Live Site URL](https://kaixin-audiophile.netlify.app)
 
 ## My process
 
@@ -56,9 +56,9 @@ after checking out with an order summary.
 - CSS custom properties
 - CSS Grid
 - Javascript
+- React
+- Tailwind CSS
 - Mobile-first workflow
-- [React](https://reactjs.org/) 
-- [Tailwind](https://tailwindcss.com/) 
 
 
 ### What I learned
