@@ -10,7 +10,6 @@
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
   - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
 - [Author](#author)
 
 ## Overview
@@ -151,15 +150,8 @@ the images ease in slowly by the time I scroll down to their sections.
 
 Lastly, this project is great for backend development, so when I feel more comfortable I would switch to making API calls instead of 
 using React's state management.
-
-
-### Useful resources
-
-- [Tailwind Documentation](https://tailwindcss.com/docs) - This helped me
-  immensely as the documentation had easy and clear styling and animation
-  examples, and I will use it going forward.
   
 
 ## Author
 
-- Portfolio Website - [Kaixin Huang](https://www.kaixin-portfolio.netlify.app)
+- Portfolio Website - [Kaixin Huang](https://kaixin-portfolio.netlify.app)
