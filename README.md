@@ -45,7 +45,7 @@ after checking out with an order summary.
 
 ### Links
 
-- Live Site URL: [https://kaixin-audiophile.netlify.app](https://kaixin-audiophile.netlify.app)
+- [Live URL](https://kaixin-audiophile.netlify.app)
 
 ## My process
 
