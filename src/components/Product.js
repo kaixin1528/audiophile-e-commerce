@@ -15,7 +15,7 @@ const Product = ({ productNum, productName }) => {
 
   return (
     <Link to={`/${products[productNum]["link"]}`} className='btn-product'>
-      <motion.button>
+      <motion.article>
         <img
           src={products[productNum]["src"]}
           alt='product'
@@ -26,16 +26,16 @@ const Product = ({ productNum, productName }) => {
         <div className='h-10'>
           <img src={shadow} alt='shadow' className='transform -translate-y-9' />
         </div>
-        <section className='grid justify-items-center gap-4'>
-          <p className='font-semibold tracking-wider'>{productName}</p>
-          <section className='grid grid-flow-col auto-cols-max gap-3'>
+        <article className='grid justify-items-center gap-4'>
+          <h4 className='font-semibold tracking-wider'>{productName}</h4>
+          <article className='grid grid-flow-col auto-cols-max gap-3'>
             <h5 className='text-sm text-black text-opacity-50 font-medium group-hover:text-moderate-orange'>
               SHOP
             </h5>
             <img src={arrow} alt='arrow' className='pt-1' />
-          </section>
-        </section>
-      </motion.button>
+          </article>
+        </article>
+      </motion.article>
     </Link>
   );
 };

@@ -16,19 +16,19 @@ const Footer = () => {
       </div>
       <nav className='grid mx-auto text-white gap-5 t:mx-0 t:grid-flow-col t:auto-cols-max t:justify-items-start t:pl-4 t:gap-10 d:grid-cols-3 d:justify-self-end d:pt-12'>
         <Link to='/headphones' className='justify-self-center'>
-          <button className='font-medium tracking-widest hover:text-moderate-orange'>
+          <h4 className='font-medium tracking-widest hover:text-moderate-orange'>
             HEADPHONES
-          </button>
+          </h4>
         </Link>
         <Link to='/speakers' className='justify-self-center'>
-          <button className='font-medium tracking-widest hover:text-moderate-orange'>
+          <h4 className='font-medium tracking-widest hover:text-moderate-orange'>
             SPEAKERS
-          </button>
+          </h4>
         </Link>
         <Link to='/earphones' className='justify-self-center'>
-          <button className='font-medium tracking-widest hover:text-moderate-orange'>
+          <h4 className='font-medium tracking-widest hover:text-moderate-orange'>
             EARPHONES
-          </button>
+          </h4>
         </Link>
       </nav>
 
@@ -38,33 +38,33 @@ const Footer = () => {
         helping you get the most out of personal audio. Come and visit our demo
         facility - we’re open 7 days a week.
       </p>
-      <section className='d:grid grid-flow-col auto-cols-max justify-self-end text-white mx-auto pb-10 gap-4 hidden d:pb-0 d:mx-0 d:pt-12'>
-        <button className='hover:bg-moderate-orange'>
+      <article className='d:grid grid-flow-col auto-cols-max justify-self-end text-white mx-auto pb-10 gap-4 hidden d:pb-0 d:mx-0 d:pt-12'>
+        <div className='cursor-pointer hover:bg-moderate-orange'>
           <img src={facebook} alt='facebook' />
-        </button>
-        <button className='hover:bg-moderate-orange'>
+        </div>
+        <div className='cursor-pointer hover:bg-moderate-orange'>
           <img src={twitter} alt='twitter' className='pt-1' />
-        </button>
-        <button className='hover:bg-moderate-orange'>
+        </div>
+        <div className='cursor-pointer hover:bg-moderate-orange'>
           <img src={instagram} alt='instagram' />
-        </button>
-      </section>
-      <section className='grid t:grid-cols-2 d:grid-cols-1 gap-10 t:gap-40'>
+        </div>
+      </article>
+      <article className='grid t:grid-cols-2 d:grid-cols-1 gap-10 t:gap-40'>
         <h5 className='text-sm text-white text-opacity-60 text-center t:text-left t:pl-4 d:pl-0'>
           Copyright 2022. All Rights Reserved
         </h5>
         <nav className='grid grid-flow-col auto-cols-max justify-self-end mx-auto pb-10 gap-4 text-white d:hidden'>
-          <button>
+          <div className='cursor-pointer'>
             <img src={facebook} alt='facebook' />
-          </button>
-          <button>
+          </div>
+          <div className='cursor-pointer'>
             <img src={twitter} alt='twitter' className='pt-1' />
-          </button>
-          <button>
+          </div>
+          <div className='cursor-pointer'>
             <img src={instagram} alt='instagram' />
-          </button>
+          </div>
         </nav>
-      </section>
+      </article>
     </footer>
   );
 };

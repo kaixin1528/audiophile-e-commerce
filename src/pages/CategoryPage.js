@@ -38,11 +38,11 @@ const CategoryPage = ({
       </section>
 
       {/* Categorized Products */}
-      <section className='grid px-6 py-16 pb-20 t:pb-24 t:px-12 d:px-40 gap-28'>
+      <ul className='grid px-6 py-16 pb-20 t:pb-24 t:px-12 d:px-40 gap-28'>
         {products.map((product) => {
           return <CategorizedProducts key={product.id} product={product} />;
         })}
-      </section>
+      </ul>
 
       {/* Categories */}
       <section className='grid px-6 pt-16 pb-24 text-sm gap-20 bg-white rounded-lg t:grid-cols-3 t:gap-5 t:px-12 d:px-40 d:pt-24'>

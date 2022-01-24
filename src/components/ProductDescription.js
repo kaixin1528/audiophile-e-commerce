@@ -17,7 +17,7 @@ const ProductDescription = ({ product, onAddtoCart, onTotal }) => {
       <div
         className={`d:grid bg-light-gray rounded-lg bg-no-repeat bg-center bg-contain bg-m-${product.slug} t:bg-t-${product.slug} d:bg-d-${product.slug} h-96 w-full`}
       ></div>
-      <section className='grid gap-7 justify-items-start'>
+      <article className='grid gap-7 justify-items-start'>
         {product.new && (
           <h4 className='text-moderate-orange font-light text-left d:pl-20'>
             N &nbsp; E &nbsp; W &nbsp;&nbsp;&nbsp;&nbsp; P &nbsp; R &nbsp; O
@@ -38,8 +38,8 @@ const ProductDescription = ({ product, onAddtoCart, onTotal }) => {
               product.price.toString().slice(1, 5)
             : product.price.toString()}
         </p>
-        <section className='grid grid-cols-2 gap-4 d:ml-20'>
-          <section className='grid grid-cols-3 justify-items-center items-center bg-light-gray'>
+        <article className='grid grid-cols-2 gap-4 d:ml-20'>
+          <article className='grid grid-cols-3 justify-items-center items-center bg-light-gray'>
             <button
               className='h-12 w-full text-black text-opacity-50 hover:text-moderate-orange'
               onClick={() => handleDeleteQuantity()}
@@ -53,7 +53,7 @@ const ProductDescription = ({ product, onAddtoCart, onTotal }) => {
             >
               +
             </button>
-          </section>
+          </article>
 
           <button
             id={product.slug}
@@ -65,8 +65,8 @@ const ProductDescription = ({ product, onAddtoCart, onTotal }) => {
           >
             ADD TO CART
           </button>
-        </section>
-      </section>
+        </article>
+      </article>
     </section>
   );
 };

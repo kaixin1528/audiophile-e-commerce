@@ -21,42 +21,42 @@ const Header = ({ onDropMenu, onOpenCart }) => {
         <img src={menu} alt='menu' />
       </button>
       <Link to='/' className='justify-self-center d:justify-self-start'>
-        <button className=''>
+        <div>
           <img src={logo} alt='logo' />
-        </button>
+        </div>
       </Link>
       <nav className='lg:grid grid-flow-col auto-cols-max hidden text-sm text-white gap-10 pt-1'>
         <Link to='/'>
-          <motion.button
+          <motion.h4
             whileHover={{ scale: 1.1 }}
             className='hover:text-moderate-orange'
           >
             HOME
-          </motion.button>
+          </motion.h4>
         </Link>
         <Link to='/headphones'>
-          <motion.button
+          <motion.h4
             whileHover={{ scale: 1.1 }}
             className='hover:text-moderate-orange'
           >
             HEADPHONES
-          </motion.button>
+          </motion.h4>
         </Link>
         <Link to='/speakers'>
-          <motion.button
+          <motion.h4
             whileHover={{ scale: 1.1 }}
             className='hover:text-moderate-orange'
           >
             SPEAKERS
-          </motion.button>
+          </motion.h4>
         </Link>
         <Link to='/earphones'>
-          <motion.button
+          <motion.h4
             whileHover={{ scale: 1.1 }}
             className='hover:text-moderate-orange'
           >
             EARPHONES
-          </motion.button>
+          </motion.h4>
         </Link>
       </nav>
       <button

@@ -34,13 +34,13 @@ const Homepage = ({
         <Header onDropMenu={onDropMenu} onOpenCart={onOpenCart} />
 
         {/* Intro Description */}
-        <motion.div
+        <motion.article
           variants={introVariants}
           initial='hidden'
           animate='visible'
           className='grid px-6 py-24 text-center d:text-left d:px-0 gap-6'
         >
-          <motion.section variants={introVariants} className='grid gap-4'>
+          <motion.article variants={introVariants} className='grid gap-4'>
             <motion.h4
               variants={introVariants}
               className='text-white text-opacity-60 font-extralight'
@@ -54,7 +54,7 @@ const Homepage = ({
             >
               XX99 MARK II HEADPHONES
             </motion.h1>
-          </motion.section>
+          </motion.article>
           <motion.p
             variants={introVariants}
             className='text-sm leading-6 text-white text-opacity-70 font-light w-5/6 mx-auto t:w-1/2 t:mx-auto d:w-1/3 d:ml-0 d:text-left'
@@ -71,7 +71,7 @@ const Homepage = ({
               SEE PRODUCT
             </motion.button>
           </Link>
-        </motion.div>
+        </motion.article>
       </section>
 
       {/* Categories */}
@@ -89,7 +89,7 @@ const Homepage = ({
           alt='zx9 speaker'
           className='hidden d:inline -mb-3'
         />
-        <section className='grid gap-8 justify-items-start d:py-10'>
+        <article className='grid gap-8 justify-items-start d:py-10'>
           <h1 className='text-4xl text-white tracking-wider font-semibold w-4/5 mx-auto t:text-5xl t:w-1/2 t:mx-auto d:text-left d:ml-32'>
             ZX9 SPEAKER
           </h1>
@@ -105,7 +105,7 @@ const Homepage = ({
               SEE PRODUCT
             </motion.button>
           </Link>
-        </section>
+        </article>
       </motion.section>
 
       {/* ZX7 Speaker */}
@@ -131,7 +131,7 @@ const Homepage = ({
       {/* YX1 Earphone */}
       <section className='grid gap-6 mx-6 t:mx-12 d:mx-40 t:grid-cols-2 t:gap-4 t:mb-12'>
         <div className='justify-self-center rounded-lg bg-no-repeat bg-center bg-cover bg-m-earphone t:bg-t-earphone d:bg-d-earphone h-96 w-full'></div>
-        <section className='grid justify-items-start px-8 py-16 t:py-32 d:px-20 mb-24 t:mb-0 gap-10 rounded-lg bg-light-gray'>
+        <article className='grid justify-items-start px-8 py-16 t:py-32 d:px-20 mb-24 t:mb-0 gap-10 rounded-lg bg-light-gray'>
           <h2 className='text-3xl font-semibold tracking-wider'>
             YX1 EARPHONES
           </h2>
@@ -148,7 +148,7 @@ const Homepage = ({
               SEE PRODUCT
             </motion.button>
           </Link>
-        </section>
+        </article>
       </section>
 
       <BestGear />

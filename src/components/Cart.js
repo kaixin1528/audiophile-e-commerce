@@ -10,8 +10,8 @@ const Cart = ({
   onOpenCart,
 }) => {
   return (
-    <div className='absolute inset-0 top-24 px-6 t:px-20 d:px-40 bg-gray-600 bg-opacity-50'>
-      <section className='grid t:absolute t:right-20 d:right-40 mt-10 bg-white p-6 rounded-lg gap-10 t:w-96 d:w-1/4'>
+    <section className='absolute inset-0 top-24 px-6 t:px-20 d:px-40 bg-gray-600 bg-opacity-50'>
+      <article className='grid t:absolute t:right-20 d:right-40 mt-10 bg-white p-6 rounded-lg gap-10 t:w-96 d:w-1/4'>
         <header className='grid grid-cols-2'>
           <h3 className='text-lg tracking-wider font-semibold'>
             CART ({cart.length})
@@ -30,15 +30,15 @@ const Cart = ({
                 <div
                   className={`bg-no-repeat bg-center bg-cover bg-${product.id} h-16 w-16 rounded-lg`}
                 ></div>
-                <section className='grid gap-1 -ml-4'>
+                <article className='grid gap-1 -ml-4'>
                   <h4 className='font-semibold tracking-wider'>
                     {product.name}
                   </h4>
                   <h4 className='text-black text-opacity-50 font-semibold'>
                     $ {product.price}
                   </h4>
-                </section>
-                <section className='grid grid-cols-3 justify-items-center bg-light-gray'>
+                </article>
+                <article className='grid grid-cols-3 justify-items-center bg-light-gray'>
                   <button
                     id={product.id}
                     className='h-10 w-full text-black text-opacity-50 hover:text-moderate-orange'
@@ -60,15 +60,15 @@ const Cart = ({
                   >
                     +
                   </button>
-                </section>
+                </article>
               </li>
             );
           })}
         </ul>
-        <section className='grid grid-cols-2'>
+        <article className='grid grid-cols-2'>
           <h4 className='font-light text-black text-opacity-50'>TOTAL</h4>
           <h3 className='text-lg font-semibold justify-self-end'>$ {total}</h3>
-        </section>
+        </article>
         <Link to='/checkout'>
           <button
             className='text-sm bg-moderate-orange hover:bg-opacity-50 font-semibold text-white tracking-wider py-3 px-5 w-full'
@@ -77,8 +77,8 @@ const Cart = ({
             CHECKOUT
           </button>
         </Link>
-      </section>
-    </div>
+      </article>
+    </section>
   );
 };
 
